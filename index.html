@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Balls are Named X, Y, Z</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 8vw; /* Responsive font size */
+            margin: 0;
+        }
+
+        .balls {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .ball {
+            width: 80px;
+            height: 80px;
+            background-image: url('ball.png'); /* Path to your ball image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .ball span {
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute;
+            bottom: -30px;
+        }
+
+        @media (max-width: 600px) {
+            .ball {
+                width: 50px;
+                height: 50px;
+            }
+
+            .ball span {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BALLS</h1>
+        <div class="balls">
+            <div class="ball"><span>X</span></div>
+            <div class="ball"><span>Y</span></div>
+            <div class="ball"><span>Z</span></div>
+        </div>
+    </div>
+</body>
+</html>
